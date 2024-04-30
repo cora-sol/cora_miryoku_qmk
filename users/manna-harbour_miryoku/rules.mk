@@ -1,15 +1,21 @@
-# Copyright 2019 Manna Harbour
-# https://github.com/manna-harbour/miryoku
+AUTO_SHIFT_ENABLE	= no
+KEY_OVERRIDE_ENABLE	= yes
+COMBO_ENABLE		= yes
+TAP_DANCE_ENABLE	= no
+DYNAMIC_TAPPING_TERM_ENABLE = yes
 
-MOUSEKEY_ENABLE = yes
-EXTRAKEY_ENABLE = yes
-AUTO_SHIFT_ENABLE = yes
-TAP_DANCE_ENABLE = yes
-CAPS_WORD_ENABLE = yes
-KEY_OVERRIDE_ENABLE = yes
+CAPS_WORD_ENABLE	= yes
+SEND_STRING_ENABLE	= yes
+UNICODE_ENABLE		= no
 
-INTROSPECTION_KEYMAP_C = manna-harbour_miryoku.c # keymaps
+MOUSEKEY_ENABLE		= yes
+EXTRAKEY_ENABLE		= yes
 
-include users/manna-harbour_miryoku/custom_rules.mk
+NKRO_ENABLE      	= yes
+COMMAND_ENABLE   	= no
+SWAP_HANDS_ENABLE 	= no
+RGB_MATRIX_ENABLE 	= no
 
-include users/manna-harbour_miryoku/post_rules.mk
+INTROSPECTION_KEYMAP_C = manna-harbour_miryoku.c
+SRC += features/layer_lock.c
+SRC += features/achordion.c
